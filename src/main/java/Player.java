@@ -21,14 +21,11 @@ public class Player {
         //unweighted, so stats are pretty random/unbalanced
         do {
 
-
             int decrement = (random.nextInt(num - 1) + 1)/4;
             sum += decrement;
 
             if (counter == 1) counter = 0;
             if (counter == 0) shooting += decrement;
-
-
 
             num -= decrement;
             counter++;
