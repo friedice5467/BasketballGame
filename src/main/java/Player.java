@@ -1,13 +1,28 @@
 import java.util.Random;
 
 public class Player {
-    private static final String firstName = "";
-    private static final String lastName = "";
+    private static String firstName = "";
+    private static String lastName = "";
     private static int shooting;
+    private int teamNumber;
 
 
-    public Player(int shooting) {
-        Player.shooting = shooting;
+    public Player(String firstName, String lastName, int teamNumber) {
+        Player.firstName = firstName;
+        Player.lastName = lastName;
+        this.teamNumber = teamNumber;
+    }
+
+    public static String getFirstName() {
+        return firstName;
+    }
+
+    public static String getLastName() {
+        return lastName;
+    }
+
+    public int getTeamNumber() {
+        return teamNumber;
     }
 
     public static int getShooting() {

@@ -9,14 +9,18 @@ public class Main {
     public static void main(String[] args) {
         UserInput.createPlayer(scanner);
         while(Engine.isIsGameStart()){
-            if(Engine.isTeam1()) team1Score += Engine.takeShot();
-//            else team2Score += Engine.takeShot();
-            System.out.println("Team1 Score: " + team1Score);
-            System.out.println("-----------");
+            runGame();
             Engine.checkGameStatus();
         }
 
 
+    }
+
+    private static void runGame() {
+        if(Engine.isTeam1()) team1Score += Engine.takeShot();
+//            else team2Score += Engine.takeShot();
+        System.out.println("Team1 Score: " + team1Score);
+        System.out.println("-----------");
     }
 
 }
