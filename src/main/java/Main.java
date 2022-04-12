@@ -1,26 +1,19 @@
-import java.util.Scanner;
-
-public class Main {
-    private static final Scanner scanner = new Scanner(System.in);
-    private static int team1Score = 0;
-    private  static int team2Score = 0;
-
-
+class Main {
     public static void main(String[] args) {
-        UserInput.createPlayer(scanner);
-        while(Engine.isIsGameStart()){
-            runGame();
-            Engine.checkGameStatus();
+        run();
+    }
+
+    public static void run(){
+        for (int i = 0; i < 5; i++) {
+            Team team1 = new Team(new Player[]{},0,0);
+            team1.makeRandomTeam();
+
+            Team team2 = new Team(new Player[]{},0,0);
+            team2.makeRandomTeam();
+
+            Game game = new Game(team1, team2,0 ,0);
+
+            game.runGame();
         }
-
-
     }
-
-    private static void runGame() {
-        if(Engine.isTeam1()) team1Score += Engine.takeShot();
-//            else team2Score += Engine.takeShot();
-        System.out.println("Team1 Score: " + team1Score);
-        System.out.println("-----------");
-    }
-
 }
