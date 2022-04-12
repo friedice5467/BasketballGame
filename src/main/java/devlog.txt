@@ -1,4 +1,9 @@
 
+Version .01
+1) Rewrote everything
+2) Simplified code
+3) game is now runnable
+
 Version .001
 1)Created Devlog
 2)Created functionality for a player to score 2 points based on amount of possessions they have
