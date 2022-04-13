@@ -4,7 +4,7 @@ class Main {
     }
 
     public static void run(){
-        int gameAmount = 5;
+        int gameAmount = 1;
 
         for (int i = 0; i < gameAmount; i++) {
             //create 2 teams to play against each other

@@ -1,3 +1,6 @@
+Version .02
+1) Added boxscore for individual players using merge()
+
 Version .015
 1) Added random names for players and teams
 

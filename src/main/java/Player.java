@@ -7,11 +7,14 @@ class Player {
     public Player(int offense, int defense) {
         this.offense = offense;
         this.defense = defense;
-        this.name = NameGenerator.pickRandomPlayerName();
     }
 
     public String getName() {
         return name;
+    }
+
+    public String generateName(){
+        return name = NameGenerator.pickRandomPlayerName();
     }
 
     public int getOffense() {

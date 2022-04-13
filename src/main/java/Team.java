@@ -28,10 +28,17 @@ class Team {
     }
 
     public int playPossession(Team team1, Team team2){
-        int teamOffense = (int) (Math.random()*team1.offenseScore);
-        int teamDefense = (int) (Math.random()*team2.defenseScore);
+        Player player1 = team1.roster[(int) (Math.random() * roster.length)];//possession and defense is still random, will change to
+        Player player2 = team2.roster[(int) (Math.random() * roster.length)];//rating based later
 
-        if(teamOffense > teamDefense) return 2; //for now simplify to 2 points; no 3 pt or ft
+        if(player1.getOffense() > player2.getDefense()){
+            Game.getBoxScore().merge(player1.getName(), 2, Integer::sum);
+            return 2;
+        }
+        else if(player2.getOffense() > player1.getDefense()){
+            Game.getBoxScore().merge(player2.getName(), 2, Integer::sum);
+            return 2;
+        }
         return 0;
     }
 
@@ -45,6 +52,7 @@ class Team {
         for (int i = 0; i < playersPerTeam; i++) {
             Player player = new Player(offensePlayer, defensePlayer);
             player.makeRandomPlayer();
+            player.generateName();
             offensePlayer += player.getOffense();
             defensePlayer += player.getDefense();
             roster[i] = player;
