@@ -1,3 +1,8 @@
+Version .015
+1) Added random names for players and teams
+
+Version .011
+1) Refactored code to be more readable (no magic numbers)
 
 Version .01
 1) Rewrote everything

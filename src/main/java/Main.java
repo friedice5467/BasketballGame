@@ -4,10 +4,12 @@ class Main {
     }
 
     public static void run(){
-        for (int i = 0; i < 5; i++) {
+        int gameAmount = 5;
+
+        for (int i = 0; i < gameAmount; i++) {
+            //create 2 teams to play against each other
             Team team1 = new Team(new Player[]{},0,0);
             team1.makeRandomTeam();
-
             Team team2 = new Team(new Player[]{},0,0);
             team2.makeRandomTeam();
 
