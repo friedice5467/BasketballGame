@@ -29,18 +29,18 @@ class Game{
             ScoreTeamTwo += teamTwo.playPossession(teamTwo, teamOne);
         }
 
-        System.out.println("Final Score: \nTeam One: " + scoreTeamOne + " points \nTeam Two: " + ScoreTeamTwo +" points\n");
+        System.out.println("Final Score: " + teamOne.getTeamName() + " : " + scoreTeamOne + " points \n " + teamTwo.getTeamName() +" : " + ScoreTeamTwo +" points\n");
 
         System.out.println(teamOne.getTeamName() + " BOX SCORE : \n");
         for(Player player : teamOne.getRoster()){
-            System.out.println(player.getName());
-            System.out.println(player.getName() + " scored " + boxScore.get(player.getName()) + " points. \n");
+            if(boxScore.get(player.getName()) == null) System.out.println( player.getName() + " scored 0 points. \n");
+            else System.out.println(player.getName() + " scored " + boxScore.get(player.getName()) + " points. \n");
         }
 
         System.out.println(teamTwo.getTeamName() + " BOX SCORE : \n");
         for(Player player : teamTwo.getRoster()){
-            System.out.println(player.getName());
-            System.out.println(player.getName() + " scored " + boxScore.get(player.getName()) + " points. \n");
+            if(boxScore.get(player.getName()) == null) System.out.println( player.getName() + " scored 0 points. \n");
+            else System.out.println(player.getName() + " scored " + boxScore.get(player.getName()) + " points. \n");
         }
     }
 }

@@ -13,8 +13,8 @@ class Player {
         return name;
     }
 
-    public String generateName(){
-        return name = NameGenerator.pickRandomPlayerName();
+    public void generateName(){
+        name = NameGenerator.pickRandomPlayerName();
     }
 
     public int getOffense() {
@@ -25,7 +25,7 @@ class Player {
         return defense;
     }
 
-    public void makeRandomPlayer() {
+    public void makeRandomPlayer() {//simplifies so every player is basically the same, for now
         offense = (int) (Math.random()*100);
         defense = 100 - offense;
         new Player(offense, defense);

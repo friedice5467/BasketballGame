@@ -1,7 +1,7 @@
 import org.apache.commons.lang3.ArrayUtils;
 
 public class NameGenerator {
-    private static String[] playerNameArr = new String[]{"Alexander Simon", "Oliver Clarke", "Pat Jenson", "Martin Evans", " Tony Brewer", "Dave McLaughin", "Johnathan Thompson", "Moses Bryant", "Cecil Vaughn", "Frank Saunders", "Derrick Rose", "Will Smith"};
+    private static String[] playerNameArr = new String[]{"Alexander Simon", "Oliver Clarke", "Pat Jenson", "Martin Evans", "Tony Brewer", "Dave McLaughin", "Johnathan Thompson", "Moses Bryant", "Cecil Vaughn", "Frank Saunders", "Derrick Rose", "Will Smith"};
     private static String[] teamNameArr = new String[]{"Quicksilver Falcons", "Knockout Stars", "Black & White Rockets", "Tornado Legends", "Scorpion Rebels", "American Dragons", "Xtreme Monsters", "Dolphin Spanners", "Striking Crunchers", "Silver Geckos"};
 
     public static String[] getPlayerNameArr() {
