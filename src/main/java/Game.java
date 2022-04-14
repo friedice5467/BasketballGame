@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.HashMap;
 
 class Game{
@@ -22,6 +21,7 @@ class Game{
     }
 
     public void runGame(){
+        LeagueSim leagueSim = new LeagueSim(new HashMap<>());
         int possessionsPerGame = 100;
 
         for (int i = 0; i < possessionsPerGame; i++) {
@@ -34,13 +34,19 @@ class Game{
         System.out.println(teamOne.getTeamName() + " BOX SCORE : \n");
         for(Player player : teamOne.getRoster()){
             if(boxScore.get(player.getName()) == null) System.out.println( player.getName() + " scored 0 points. \n");
-            else System.out.println(player.getName() + " scored " + boxScore.get(player.getName()) + " points. \n");
+            else {
+                LeagueSim.getPlayerPoints().merge(player.getName(), 2, Integer::sum);
+                System.out.println(player.getName() + " scored " + boxScore.get(player.getName()) + " points. \n");
+            }
         }
 
         System.out.println(teamTwo.getTeamName() + " BOX SCORE : \n");
         for(Player player : teamTwo.getRoster()){
             if(boxScore.get(player.getName()) == null) System.out.println( player.getName() + " scored 0 points. \n");
-            else System.out.println(player.getName() + " scored " + boxScore.get(player.getName()) + " points. \n");
+            else{
+                LeagueSim.getPlayerPoints().merge(player.getName(), 2, Integer::sum);
+                System.out.println(player.getName() + " scored " + boxScore.get(player.getName()) + " points. \n");
+            }
         }
     }
 }

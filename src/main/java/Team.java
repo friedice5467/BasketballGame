@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 class Team {
     private String teamName;
     private Player[] roster;
@@ -33,10 +35,13 @@ class Team {
 
         if(player1.getOffense() > player2.getDefense()){
             Game.getBoxScore().merge(player1.getName(), 2, Integer::sum);
+
             return 2;
+
         }
         else if(player2.getOffense() > player1.getDefense()){
             Game.getBoxScore().merge(player2.getName(), 2, Integer::sum);
+
             return 2;
         }
         return 0;

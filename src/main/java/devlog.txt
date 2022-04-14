@@ -1,3 +1,11 @@
+#TODO
+1) Rewrite the points hashmaps and put them as player class variable for long term
+
+Version .03
+1) added a league where multiple teams play each other over a course of a season
+2) fixed issue with Team class where it was deleting team names too often before generation leading to an empty array
+3) fixed run() in Main class so that teams aren't randomly generated each loop
+
 Version .021
 1)removed null for 0 in box score
 
