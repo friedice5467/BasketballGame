@@ -4,8 +4,15 @@ public class Sandbox {
     private static String[] strArr = new String[]{"one", "two", "three"};
 
     public static void main(String[] args) {
-//        LeagueSim.presentStats();
-        System.out.println("hello world");
+        int addPoints = 2;
+        int currentPoints = 0;
+        int i = 0;
+
+        while(i < 5){
+            currentPoints += addPoints;
+            i++;
+        }
+        System.out.println(currentPoints);
     }
 
     private static String getString() {

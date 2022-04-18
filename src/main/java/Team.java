@@ -1,5 +1,3 @@
-import java.util.HashMap;
-
 class Team {
     private String teamName;
     private Player[] roster;
@@ -10,7 +8,10 @@ class Team {
         this.roster = roster;
         this.offenseScore = offenseScore;
         this.defenseScore = defenseScore;
-        this.teamName = NameGenerator.pickRandomTeamName();
+    }
+
+    public void generateTeamName(){
+        teamName = NameGenerator.pickRandomTeamName();
     }
 
     public String getTeamName() {
@@ -31,16 +32,21 @@ class Team {
 
     public int playPossession(Team team1, Team team2){
         Player player1 = team1.roster[(int) (Math.random() * roster.length)];//possession and defense is still random, will change to
-        Player player2 = team2.roster[(int) (Math.random() * roster.length)];//rating based later
+        Player player2 = team2.roster[(int) (Math.random() * roster.length)];//rating based later\
+
+
+
 
         if(player1.getOffense() > player2.getDefense()){
-            Game.getBoxScore().merge(player1.getName(), 2, Integer::sum);
+            player1.setGamePoints(player1.getGamePoints()+2);
+            player1.setCareerPoints(player1.getGamePoints());
 
             return 2;
-
         }
+
         else if(player2.getOffense() > player1.getDefense()){
-            Game.getBoxScore().merge(player2.getName(), 2, Integer::sum);
+            player2.setGamePoints(player2.getGamePoints()+2);
+            player2.setCareerPoints(player2.getGamePoints());
 
             return 2;
         }
@@ -67,5 +73,6 @@ class Team {
         defenseScore = defensePlayer / playersPerTeam;
 
         new Team(roster, offenseScore, defenseScore);
+        generateTeamName();
     }
 }
