@@ -1,7 +1,7 @@
-#ABOUT
+###ABOUT
 Basketball simulation with 10 players, 2 teams, 5 players on each team at it's current form. Eventually it will be fleshed out to have a league with multiple teams, more players, game modes, and better statistics. I will use this readme also as a devlog to track my progress.
 
-#TODO
+###TODO
 *DONE*) Rewrite the points hashmaps and put them as player class variable for long term
 1.5) fix the bug with incorrect end of season data
 2) Implement better player attributes and separate it from overall team attributes
