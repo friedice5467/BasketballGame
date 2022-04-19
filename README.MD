@@ -48,5 +48,5 @@ Version .01
 3) simulation is now runnable
 
 Version .001
-1)Created Devlog
-2)Created functionality for a player to score 2 points based on amount of possessions they have
+1.Created Devlog
+2.Created functionality for a player to score 2 points based on amount of possessions they have
