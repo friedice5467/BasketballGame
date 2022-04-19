@@ -4,21 +4,21 @@ Basketball simulation with 10 players, 2 teams, 5 players on each team at it's c
 ### TODO
 
 1) ~Rewrite the points hashmaps and put them as player class variable for long term~
-1.5) fix the bug with incorrect end of season data
-2) Implement better player attributes and separate it from overall team attributes
-3) Implement Player tendencies
-4) Implement better possessions
-5) Implement rebounds
-6) Implement steals
-7) Implement 3PT
-8) Implement Foul, FT
-9) Implement rotations, substitutions
-10) Implement User Input for an actual game
-11) Implement data backend, save/load
-12) Add more teams, more players
-13) Implement an actual game mode
-14) Rewrite it for Android, obfuscate
-15) Rewrite in C#/Unity, make it look like an actual video game, and publish it on steam/itch.io
+2) fix the bug with incorrect end of season data
+3) Implement better player attributes and separate it from overall team attributes
+4) Implement Player tendencies
+5) Implement better possessions
+6) Implement rebounds
+7) Implement steals
+8) Implement 3PT
+9) Implement Foul, FT
+10) Implement rotations, substitutions
+11) Implement User Input for an actual game
+12) Implement data backend, save/load
+13) Add more teams, more players
+14) Implement an actual game mode
+15) Rewrite it for Android, obfuscate
+16) Rewrite in C#/Unity, make it look like an actual video game, and publish it on steam/itch.io
 
 Version .035
 1) Removed LeagueSim class
