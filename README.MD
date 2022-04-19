@@ -17,8 +17,10 @@ Basketball simulation with 10 players, 2 teams, 5 players on each team at it's c
 12) Implement data backend, save/load
 13) Add more teams, more players
 14) Implement an actual game mode
-15) Rewrite it for Android, obfuscate
-16) Rewrite in C#/Unity, make it look like an actual video game, and publish it on steam/itch.io
+15) Rewrite it for Android
+16) Rewrite in C#/Unity
+17) Add GUI
+18) Publish?
 
 Version .035
 1) Removed LeagueSim class
