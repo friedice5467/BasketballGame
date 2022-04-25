@@ -36,8 +36,7 @@ Version .03
 3) fixed run() in Main class so that teams aren't randomly generated each loop
 
 Version .021
-
-1)removed null for 0 in box score
+1) Removed null for 0 in box score
 
 Version .02
 1) Added boxscore for individual players using merge()
@@ -54,6 +53,5 @@ Version .01
 3) simulation is now runnable
 
 Version .001
-
-1)Created Devlog
-2)Created functionality for a player to score 2 points based on amount of possessions they have
+1) Created Devlog
+2) Created functionality for a player to score 2 points based on amount of possessions they have
