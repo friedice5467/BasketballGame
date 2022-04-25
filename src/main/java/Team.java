@@ -39,14 +39,14 @@ class Team {
 
         if(player1.getOffense() > player2.getDefense()){
             player1.setGamePoints(player1.getGamePoints()+2);
-            player1.setCareerPoints(player1.getGamePoints());
+            player1.setCareerPoints(player1.getCareerPoints()+2);
 
             return 2;
         }
 
         else if(player2.getOffense() > player1.getDefense()){
             player2.setGamePoints(player2.getGamePoints()+2);
-            player2.setCareerPoints(player2.getGamePoints());
+            player2.setCareerPoints(player2.getCareerPoints()+2);
 
             return 2;
         }

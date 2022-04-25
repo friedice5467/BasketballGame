@@ -21,7 +21,7 @@ class Player {
     }
 
     public void setCareerPoints(int careerPoints) {
-        this.careerPoints += careerPoints;
+        this.careerPoints = careerPoints;
     }
 
     public String getName() {
