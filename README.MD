@@ -4,7 +4,7 @@ Basketball simulation with 10 players, 2 teams, 5 players on each team at it's c
 ### TODO
 
 1) ~Rewrite the points hashmaps and put them as player class variable for long term~
-2) fix the bug with incorrect end of season data
+2) ~fix the bug with incorrect end of season data~
 3) Implement better player attributes and separate it from overall team attributes
 4) Implement Player tendencies
 5) Implement better possessions
@@ -22,6 +22,9 @@ Basketball simulation with 10 players, 2 teams, 5 players on each team at it's c
 17) Add GUI
 18) Publish?
 
+Version 036
+1) Fixed issue with end of season stats
+
 Version .035
 1) Removed LeagueSim class
 2) Removed box score from Game class and all use cases
@@ -33,6 +36,7 @@ Version .03
 3) fixed run() in Main class so that teams aren't randomly generated each loop
 
 Version .021
+
 1)removed null for 0 in box score
 
 Version .02
@@ -50,5 +54,6 @@ Version .01
 3) simulation is now runnable
 
 Version .001
+
 1)Created Devlog
 2)Created functionality for a player to score 2 points based on amount of possessions they have
