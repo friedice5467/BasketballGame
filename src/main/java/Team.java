@@ -31,10 +31,8 @@ class Team {
     }
 
     public int playPossession(Team team1, Team team2){
-        Player player1 = team1.roster[(int) (Math.random() * roster.length)];//possession and defense is still random, will change to
-        Player player2 = team2.roster[(int) (Math.random() * roster.length)];//rating based later\
-
-
+        Player player1 = team1.roster[(int) (Math.random() * roster.length)];
+        Player player2 = team2.roster[(int) (Math.random() * roster.length)];
 
 
         if(player1.getOffense() > player2.getDefense()){
@@ -62,7 +60,8 @@ class Team {
 
         for (int i = 0; i < playersPerTeam; i++) {
             Player player = new Player(offensePlayer, defensePlayer);
-            player.makeRandomPlayer();
+            if(i == 0)player.makeRandomPlayerStar();
+            if( i > 0) player.makeRandomPlayerGeneric();
             player.generateName();
             offensePlayer += player.getOffense();
             defensePlayer += player.getDefense();

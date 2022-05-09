@@ -48,9 +48,15 @@ class Player {
         return careerPoints;
     }
 
-    public void makeRandomPlayer() {//simplifies so every player is basically the same, for now
-        offense = (int) (Math.random()*100);
+    public void makeRandomPlayerStar() {
+        offense = (int) (Math.random()*80) + 20;
         defense = 100 - offense;
+        new Player(offense, defense);
+    }
+
+    public void makeRandomPlayerGeneric() {
+        offense = (int) (Math.random()*80);
+        defense = 80 - offense;
         new Player(offense, defense);
     }
 }
